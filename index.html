@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dicksonmaina — GitHub Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
+      color: #e0e0e0;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 1200px; margin: 0 auto; }
+    header { text-align: center; padding: 3rem 0; }
+    h1 { font-size: 3rem; background: linear-gradient(90deg, #00d4ff, #7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem; }
+    .subtitle { font-size: 1.2rem; color: #888; }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0; }
+    .stat-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 1.5rem; text-align: center; }
+    .stat-number { font-size: 2.5rem; font-weight: bold; color: #00d4ff; }
+    .stat-label { color: #888; margin-top: 0.5rem; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 1.5rem; margin: 3rem 0; }
+    .project-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 1.5rem;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .project-card:hover { transform: translateY(-4px); border-color: rgba(0, 212, 255, 0.3); }
+    .project-title { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .project-title a { color: #00d4ff; text-decoration: none; }
+    .project-title a:hover { text-decoration: underline; }
+    .project-desc { color: #aaa; font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem; }
+    .project-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .tag { background: rgba(123, 47, 247, 0.2); color: #b388ff; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; }
+    footer { text-align: center; padding: 3rem 0; color: #666; font-size: 0.9rem; }
+    a { color: #00d4ff; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>dicksonmaina</h1>
+      <p class="subtitle">Building the future of AI-powered development tools</p>
+      <p style="margin-top: 1rem;">
+        <a href="https://github.com/dicksonmaina" style="color: #e0e0e0; text-decoration: none; margin: 0 1rem;">GitHub</a>
+        <a href="https://github.com/sponsors/dicksonmaina" style="color: #e0e0e0; text-decoration: none; margin: 0 1rem;">Sponsor</a>
+        <a href="https://github.com/dicksonmaina/dicksonmaina-portfolio" style="color: #e0e0e0; text-decoration: none; margin: 0 1rem;">Portfolio</a>
+      </p>
+    </header>
+
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-number" id="repos">11</div>
+        <div class="stat-label">Repositories</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="stars">1</div>
+        <div class="stat-label">Stars</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="followers">0</div>
+        <div class="stat-label">Followers</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="following">13</div>
+        <div class="stat-label">Following</div>
+      </div>
+    </div>
+
+    <div class="projects">
+      <div class="project-card">
+        <div class="project-title"><a href="https://github.com/dicksonmaina/kilo-auto-debug">kilo-auto-debug</a></div>
+        <div class="project-desc">Self-improving debugging memory and automated fix system for Kilo Code agents. Redis-backed, circuit-breaker safe, learns from every bug.</div>
+        <div class="project-tags">
+          <span class="tag">ai</span>
+          <span class="tag">debugging</span>
+          <span class="tag">kilocode</span>
+          <span class="tag">redis</span>
+          <span class="tag">ollama</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title"><a href="https://github.com/dicksonmaina/nexus-ecosystem">nexus-ecosystem</a></div>
+        <div class="project-desc">NEXUS knowledge graph ingestion pipeline with AI embedding and multi-source data fusion for long-running agents.</div>
+        <div class="project-tags">
+          <span class="tag">ai</span>
+          <span class="tag">knowledge-graph</span>
+          <span class="tag">embedding</span>
+          <span class="tag">arxiv</span>
+          <span class="tag">python</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title"><a href="https://github.com/dicksonmaina/jarvis-agile">jarvis-agile</a></div>
+        <div class="project-desc">JARVIS AI agent — Python/Flask with WhatsApp, Telegram, Redis, and multi-provider LLM support. Always-on autonomous operation.</div>
+        <div class="project-tags">
+          <span class="tag">ai</span>
+          <span class="tag">agent</span>
+          <span class="tag">whatsapp</span>
+          <span class="tag">telegram</span>
+          <span class="tag">redis</span>
+          <span class="tag">flask</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title"><a href="https://github.com/dicksonmaina/claw-code">claw-code</a></div>
+        <div class="project-desc">AI development agent with MCP support and behavioral parity harness. Rust-native performance for reliable agent execution.</div>
+        <div class="project-tags">
+          <span class="tag">ai</span>
+          <span class="tag">agent</span>
+          <span class="tag">mcp</span>
+          <span class="tag">rust</span>
+          <span class="tag">kilocode</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title"><a href="https://github.com/dicksonmaina/career-ops">career-ops</a></div>
+        <div class="project-desc">Automated job application pipeline with AI learning plans and project recommendations. Track, learn, and apply smarter.</div>
+        <div class="project-tags">
+          <span class="tag">ai</span>
+          <span class="tag">career</span>
+          <span class="tag">automation</span>
+          <span class="tag">job-search</span>
+          <span class="tag">python</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title"><a href="https://github.com/dicksonmaina/arxiv-paper-curator">arxiv-paper-curator</a></div>
+        <div class="project-desc">AI-powered arXiv paper curation pipeline with Airflow, Gradio, and ML classification. Stay ahead of research automatically.</div>
+        <div class="project-tags">
+          <span class="tag">ai</span>
+          <span class="tag">arxiv</span>
+          <span class="tag">paper-curation</span>
+          <span class="tag">airflow</span>
+          <span class="tag">gradio</span>
+          <span class="tag">machine-learning</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title"><a href="https://github.com/dicksonmaina/openwa">openwa</a></div>
+        <div class="project-desc">Open Source WhatsApp API wrapper — full-stack NestJS application. Production-grade WhatsApp integration for developers.</div>
+        <div class="project-tags">
+          <span class="tag">whatsapp</span>
+          <span class="tag">api</span>
+          <span class="tag">nestjs</span>
+          <span class="tag">nodejs</span>
+          <span class="tag">typescript</span>
+          <span class="tag">open-source</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title"><a href="https://github.com/dicksonmaina/plate">plate</a></div>
+        <div class="project-desc">Rich-text editor with AI and shadcn/ui. Modern editing experience with AI-powered assistance.</div>
+        <div class="project-tags">
+          <span class="tag">editor</span>
+          <span class="tag">rich-text</span>
+          <span class="tag">ai</span>
+          <span class="tag">typescript</span>
+          <span class="tag">react</span>
+          <span class="tag">shadcn</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title"><a href="https://github.com/dicksonmaina/poultry-farm-system">poultry-farm-system</a></div>
+        <div class="project-desc">Poultry farm management system for modern agriculture operations.</div>
+        <div class="project-tags">
+          <span class="tag">management</span>
+          <span class="tag">farm</span>
+          <span class="tag">agriculture</span>
+          <span class="tag">web</span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Built with ❤️ by <a href="https://github.com/dicksonmaina">dicksonmaina</a></p>
+      <p style="margin-top: 0.5rem;">
+        <a href="https://github.com/sponsors/dicksonmaina">Sponsor on GitHub</a> · 
+        <a href="https://github.com/dicksonmaina/dicksonmaina-portfolio">Portfolio</a> · 
+        <a href="https://github.com/dicksonmaina/kilo-auto-debug">Auto-Debug System</a>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    async function loadStats() {
+      try {
+        const res = await fetch('https://api.github.com/users/dicksonmaina');
+        const data = await res.json();
+        document.getElementById('followers').textContent = data.followers || 0;
+        document.getElementById('following').textContent = data.following || 0;
+      } catch (e) {
+        console.log('Could not load live stats');
+      }
+    }
+    loadStats();
+  </script>
+</body>
+</html>

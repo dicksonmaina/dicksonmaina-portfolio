@@ -1,0 +1,43 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+.credentials
+*.key
+credentials.json
+.envrc
+
+# Python
+__pycache__
+*.pyc
+.venv
+.venv/
+*.egg-info
+dist
+build
+*.whl
+.eggs
+
+# Node
+node_modules
+
+# Build/dist
+dist
+build
+.next
+output/
+
+# Logs
+*.log
+*.err.log
+
+# Data/runtime
+*.sqlite3
+chroma_db/
+conversation_history.json
+indexed_files.json
+knowledge_base/
